@@ -1,0 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+/* Body.css */
+.body {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Automatically fit columns with a minimum width of 150px */
+   grid-gap: 20px; 
+  /* display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  background-color: aqua; */
+}
+
+.square {
+  width: 100%; /* Adjust to make squares take up the full available width */
+  height: 150px;
+  background-color: #B56464;
+  border: 10px solid #D9D9D9;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: azure;
+}
+
+.vertical-rectangle {
+  flex: 1; /* Allow the rectangle to take up remaining space */
+  margin-left: 20px; /* Adjust the margin as needed */
+  background-color: #7D8B9F;
+  color: white;
+  font-size: 16px;
+  height: auto;
+  width: 100%;
+  max-width: 556px;
+  border-radius: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
